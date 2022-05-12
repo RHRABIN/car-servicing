@@ -21,7 +21,7 @@ const Experts = () => {
             <h2 className='text-primary text-center'>Our Experts</h2>
             <div className="row">
                 {experts.map(expert => <Expert
-                    key={expert.id}
+                    key={expert._id}
                     expert={expert}
                 >
 

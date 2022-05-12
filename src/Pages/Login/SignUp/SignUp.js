@@ -5,7 +5,6 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 
 import './Signup.css'
 import SocialLogin from '../Login/SocialLogin';
-import { async } from '@firebase/util';
 const SignUp = () => {
     const navigate = useNavigate();
     const [agree, setAgree] = useState(false);
@@ -18,7 +17,7 @@ const SignUp = () => {
 
     if (user) {
 
-        console.log(user)
+        console.log('/home')
     }
 
     const handleSubmit = async (event) => {
